@@ -1,7 +1,7 @@
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
-    restart: always
+    image: ghcr.io/glennbrown/virt-manager:latest
+    restart: unless-stopped
     ports:
       - 8185:80
 
